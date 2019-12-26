@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #42ca323b;
+}
+/*----------------------------Start HEADER------------------------------------*/
+header
+{
+    height: 60px;
+}
+.menu
+{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+nav.menu h2
+{
+    float: left;
+    line-height: 60px;
+    padding-left: 20px;
+}
+nav.menu ul li
+{
+    display: inline-block;
+    list-style: none;
+    color:  white;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+}
+nav.menu ul li:hover
+{
+    border: 2px solid #FB2525;
+    background: #FB2525;
+    padding: 3px;
+    transition: .5s;
+    color: white
+}
+
+nav.menu ul a::after
+{
+    content: " |" ;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav.menu ul a:last-child::after
+{
+    content: "";
+}
+/*-------------------------------------End HEADRER----------------------------*/
+
+/*-------------------------------------START MAIN BODY----------------------------*/
+
+.main
+{
+    margin:  60px;
+    margin-top: -5px;
+}
+.main h1
+{
+    font-family: 'Lemonada', cursive;
+    text-shadow: 2px 2px 1px yellow;
+    padding: 10px;
+}
+.main p
+{
+    font-family: 'Tajawal', sans-serif;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.main ul li
+{
+    font-family: 'Tajawal', sans-serif;
+    margin-top: 5px;
+    font-size: 18px;
+    list-style: decimal;
+    word-wrap: break-word;
+}
+.main span
+{
+    color: red;
+    font-weight: bold;
+}
+.circle img
+{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
+/*------------------------------- END MAIN BODY----------------------------*/ 
+
+/*-------------------------------START SLIDER -----------------------------*/
+    .swiper-container {
+      width: 100%;
+      height: 650px;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 30px;
+      background: transparent;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+:root {
+  --swiper-theme-color: #fff;   
+}
+.swiper-slide img
+{
+    width: 100%
+}
